@@ -1,6 +1,7 @@
 $header_background_color: #DDDDDD;
 $main_background_color: #AAAAAA;
 $form_border_color: #333333;
+$footer_background_color: #666666;
 
 * {
     box-sizing: border-box;
@@ -129,6 +130,21 @@ html {
     border: 0;
     border-radius: 1.5rem;
     margin: 1rem auto;
+}
+
+.footer {
+    background: linear-gradient(to bottom, $main_background_color 0%, $header_background_color 100%);
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+.footer hr {
+    width: 90vw;
+    border: 0.1rem solid #424242;
+}
+  
+.footer__copyright {
+    font-weight: bold;
 }
 
 @media only screen and (min-width: 380px) {

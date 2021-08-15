@@ -127,6 +127,21 @@ html {
   margin: 1rem auto;
 }
 
+.footer {
+  background: linear-gradient(to bottom, #AAAAAA 0%, #DDDDDD 100%);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer hr {
+  width: 90vw;
+  border: 0.1rem solid #424242;
+}
+
+.footer__copyright {
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 380px) {
   html {
     font-size: 11px;
