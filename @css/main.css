@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  background: linear-gradient(to bottom, #DDDDDD 0%, #AAAAAA 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 32rem;
+}
+
+.header__titulo_principal {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.header__logo {
+  width: 6rem;
+  padding: 0.5rem;
+}
+
+.main {
+  background-color: #AAAAAA;
+  display: block;
+  min-width: 32rem;
+}
+
+.main__titulo_seccion {
+  text-align: center;
+  padding: 2rem;
+}
+
+.main__general_text {
+  text-align: justify;
+  padding: 1.2rem;
+}
+
+.main__form_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form_container__form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 2rem;
+  padding: 2rem;
+  border: 0.1rem solid #333333;
+  border-radius: 0 2rem 2rem 0;
+  min-width: 28rem;
+}
+
+.form_container__fieldset {
+  max-width: 32rem;
+  border-radius: 0 2rem 2rem 0;
+  padding: 1rem;
+}
+
+.form_container__fieldset legend {
+  font-weight: bold;
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+
+.form_container__label {
+  display: block;
+  font-weight: bold;
+}
+
+.form_container__label * {
+  vertical-align: middle;
+  padding: 0.2rem;
+  margin: 1rem 0;
+}
+
+.form_container__saasicon {
+  height: 1.5rem;
+}
+
+.form_container__input {
+  width: 100%;
+}
+
+.form_container__checkbox {
+  text-align: start;
+}
+
+.form_container__text, .form_container__text--error {
+  text-align: justify;
+}
+
+.form_container__text--error {
+  color: #AA0000;
+}
+
+.form_container__results {
+  display: none;
+  background-color: #25426e;
+  border: 0.2rem dotted #2d7aee;
+  border-radius: 2rem;
+}
+
+.form_container__results p {
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: justify;
+  padding: 1rem;
+}
+
+.form_container__main_button {
+  width: 100%;
+  background-color: #319b31;
+  padding: 1.5rem;
+  border: 0;
+  border-radius: 1.5rem;
+  margin: 1rem auto;
+}
+
+@media only screen and (min-width: 380px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media only screen and (min-width: 780px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

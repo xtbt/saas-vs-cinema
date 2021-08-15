@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/saasvsmt/@css/main.css" />
+    <script type="text/javascript" src="/saasvsmt/@js/main.js"></script>
+    <title>SaaS Streaming Services VS Movie Theaters</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="/saasvsmt/@assets/img/logo_ip20.png" alt="IP20 Logo" />
+        <h1 class="header__titulo_principal">SaaS Streaming Services Justificator</h1>
+        <img class="header__logo" src="/saasvsmt/@assets/img/logo_jschallenge.png" alt="JS Challenge Logo" />
+    </header>
+    <main class="main">
+        <h3 class="main__titulo_seccion">SaaS VS Movie Theater</h3>
+        <p class="main__general_text">Do you really know if Video Streaming Services worth it over Movie Theaters?
+            Here you will be able to compare each other and determine which one is the best option for you,
+            taking in mind the number of movies you watch in a month.</p>
+        <p class="main__general_text"><em>Note: Consider a parallel world where SaaS providers have the same catalog
+            as in Cinemas right now.
+        </em></p>
+        <section class="main__form_container">
+            <form class="form_container__form">
+                <fieldset class="form_container__fieldset">
+                    <legend>Main input data</legend>
+                    <label for="num_moviesQuantity" class="form_container__label">
+                        <span class="form_container__text">How many movies do you watch per month (approximately):</span>
+                        <input class="form_container__input" type="number" name="num_moviesQuantity" id="num_moviesQuantity" min="1" max="60" value="1" />
+                        <span id="msj_moviesQuantity" class="form_container__text--error"></span>
+                    </label>
+                    <p class="form_container__text">From the list of movies you are planning to watch this month,
+                        select the streaming video services that has them in their movie catalog.
+                    </p>
+                    <label for="cb_netflix" class="form_container__label">
+                        <img class="form_container__saasicon" src="/saasvsmt/@assets/img/netflix.png" alt="Netflix" />
+                        <span class="form_container__text">Netflix (13.99 USD):</span>
+                        <input class="form_container__checkbox" type="checkbox" value="13.99" id="cb_netflix" />
+                    </label>
+                    <label for="cb_prime" class="form_container__label">
+                        <img class="form_container__saasicon" src="/saasvsmt/@assets/img/prime.png" alt="Amazon Prime Video" />
+                        <span class="form_container__text">Prime Video (12.99 USD):</span>
+                        <input class="form_container__checkbox" type="checkbox" value="12.99" id="cb_prime" />
+                    </label>
+                    <label for="cb_disney" class="form_container__label">
+                        <img class="form_container__saasicon" src="/saasvsmt/@assets/img/disney.png" alt="Disney Plus" />
+                        <span class="form_container__text">Disney Plus 10.99 USD:</span>
+                        <input class="form_container__checkbox" type="checkbox" value="7.99" id="cb_disney" />
+                    </label>
+                    <label for="cb_hbomax" class="form_container__label">
+                        <img class="form_container__saasicon" src="/saasvsmt/@assets/img/hbomax.png" alt="HBO Max" />
+                        <span class="form_container__text">HBO Max (9.99 USD):</span>
+                        <input class="form_container__checkbox" type="checkbox" value="9.99" id="cb_hbomax" />
+                    </label>
+                    <label for="cb_blim" class="form_container__label">
+                        <img class="form_container__saasicon" src="/saasvsmt/@assets/img/blim.png" alt="Blim TV" />
+                        <span class="form_container__text">Blim (9.99 USD):</span>
+                        <input class="form_container__checkbox" type="checkbox" value="9.99" id="cb_blim" />
+                    </label>
+                    <label for="cb_clarovideo" class="form_container__label">
+                        <img class="form_container__saasicon" src="/saasvsmt/@assets/img/clarovideo.png" alt="Claro Video" />
+                        <span class="form_container__text">Clarovideo (9.99 USD):</span>
+                        <input class="form_container__checkbox" type="checkbox" value="9.99" id="cb_clarovideo" />
+                    </label>
+                    <label for="cb_hulu" class="form_container__label">
+                        <img class="form_container__saasicon" src="/saasvsmt/@assets/img/hulu.png" alt="Hulu" />
+                        <span class="form_container__text">Hulu (7.99 USD):</span>
+                        <input class="form_container__checkbox" type="checkbox" value="6.99" id="cb_hulu" />
+                    </label>
+                    <span id="msj_saas" class="form_container__text--error"></span>
+                </fieldset>
+                <fieldset class="form_container__fieldset">
+                    <legend>Extra inputs</legend>
+                    <label for="num_numberOfPersons" class="form_container__label">
+                        <span class="form_container__text">When you go to the movie theater, how many persons do you take with you (Average $2USD per person)?</span>
+                        <input class="form_container__input" type="number" name="num_numberOfPersons" id="num_numberOfPersons" min="0" max="10" value="0" />
+                        <span id="msj_numberOfPersons" class="form_container__text--error"></span>
+                    </label>
+                    <p class="form_container__text">If you like to get snacks when you go to the movie theater,
+                        select the ones you normally buy:
+                    </p>
+                    <label for="cb_popcorns" class="form_container__label">
+                        <span class="form_container__text">Popcorns (3.5 USD):</span>
+                        <input class="form_container__checkbox" type="checkbox" value="3.5" name="cb_snacks" id="cb_popcorns" />
+                    </label>
+                    <label for="cb_nachos" class="form_container__label">
+                        <span class="form_container__text">Nachos (4 USD):</span>
+                        <input class="form_container__checkbox" type="checkbox" value="4" name="cb_snacks" id="cb_nachos" />
+                    </label>
+                    <label for="cb_hotdogs" class="form_container__label">
+                        <span class="form_container__text">Hot dogs (3 USD):</span>
+                        <input class="form_container__checkbox" type="checkbox" value="3" name="cb_snacks" id="cb_hotdogs" />
+                    </label>
+                    <label for="cb_sodas" class="form_container__label">
+                        <span class="form_container__text">Sodas (2 USD):</span>
+                        <input class="form_container__checkbox" type="checkbox" value="2" name="cb_snacks" id="cb_sodas" />
+                    </label>
+                    <label for="cb_icees" class="form_container__label">
+                        <span class="form_container__text">Icees (2.5 USD):</span>
+                        <input class="form_container__checkbox" type="checkbox" value="2.5" name="cb_snacks" id="cb_icees" />
+                    </label>
+                </fieldset>
+                <fieldset class="form_container__fieldset">
+                    <legend>Results</legend>
+                    <p id="msj_resultsError" class="form_container__text--error"></p>
+                    <div id="results" class="form_container__results"></div>
+                    <button id="btn_compare" class="form_container__main_button" type="button" id="btnCompare">Compare video streaming services vs movie theaters (Additional costs will be considered)</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
