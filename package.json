@@ -1,7 +1,7 @@
 {
-  "name": "cinevssaas",
+  "name": "saas-vs-cinema",
   "version": "1.0.0",
-  "description": "Utilidad para comparar costos entre Cine y SaaS (Netflix, Prime, Disney, etc.)",
+  "description": "Utility to compare costs between Video Streaming Services and Cinema (Including secundary costs)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
