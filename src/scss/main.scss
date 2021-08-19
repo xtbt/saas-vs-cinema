@@ -1,7 +1,12 @@
-$header_background_color: #DDDDDD;
-$main_background_color: #AAAAAA;
-$form_border_color: #333333;
-$footer_background_color: #666666;
+$header_background_color: #5c7786;
+$main_background_color: #6D8EA0;
+$form_background_color: #213066;
+$form_border_color: #536fb1;
+$form_input_color: #7b94d8;
+$form_button_color: #2b4fa3;
+$form_error_message_color: #e95454;
+$fieldset_shadow_color: #576CA8;
+$footer_background_color: #4e6572;
 
 * {
     box-sizing: border-box;
@@ -55,21 +60,25 @@ html {
 }
 
 .form_container__form {
+    color: white;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: $form_background_color;
     margin: 2rem;
     padding: 2rem;
     border: 0.1rem solid $form_border_color;
     border-radius: 0 2rem 2rem 0;
     min-width: 28rem;
+    box-shadow: 0.3rem 0.3rem 0.5rem 0rem $form_button_color;
 }
 
 .form_container__fieldset {
     max-width: 32rem;
-    border-radius: 0 2rem 2rem 0;
     padding: 1rem;
+    border-radius: 0 2rem 2rem 0;
+    margin: 0.5rem 0.5rem;
+    box-shadow: 0.3rem 0.3rem 0.5rem 0rem $fieldset_shadow_color;
 }
 
 .form_container__fieldset legend {
@@ -80,7 +89,6 @@ html {
 
 .form_container__label {
     display: block;
-    font-weight: bold;
 }
 
 .form_container__label * {
@@ -94,7 +102,9 @@ html {
 }
 
 .form_container__input {
+    background-color: $form_input_color;
     width: 100%;
+    font-weight: bold;
 }
 
 .form_container__checkbox {
@@ -106,7 +116,7 @@ html {
 }
 
 .form_container__text--error {
-    color: #AA0000;
+    color: $form_error_message_color;
 }
 
 .form_container__results {
@@ -124,12 +134,17 @@ html {
 }
 
 .form_container__main_button {
+    color: white;
     width: 100%;
-    background-color: #319b31;
+    background-color: $form_button_color;
     padding: 1.5rem;
-    border: 0;
+    border: 0.2rem solid rgba(255,255,255,0.3);
     border-radius: 1.5rem;
     margin: 1rem auto;
+}
+
+.form_container__main_button:hover {
+    cursor: pointer;
 }
 
 .footer {
